@@ -1,6 +1,3 @@
-
-Code:You Cybersecurity Capstone -- README.md (raw markdown source)
-
 # Authentication Log Analyzer
 
 **Code:You Cybersecurity Capstone -- Part I: Python Automation Track**
