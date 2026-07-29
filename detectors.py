@@ -151,3 +151,32 @@ def detect_privilege_events(parsed_logs):
                 break  # Only flag this entry once, even if multiple keywords match
     
     return flagged
+
+
+def get_top_users(parsed_logs, n=10):
+    """
+    Extra Analytics: Top N Most Active Usernames
+    
+    This shows which usernames appear most often in the log,
+    regardless of whether their activity was suspicious.
+    
+    'n' is how many usernames to return (default 10).
+    This helps the analyst understand normal vs. unusual account usage.
+    """
+    # Count every login event per username
+    user_counts = Counter(log['user'] for log in parsed_logs if log['user'])
+    
+    # .most_common(n) returns the top n items as a list of (item, count) tuples
+    return user_counts.most_common(n)
+
+
+def get_top_ips(parsed_logs, n=5):
+    """
+    Extra Analytics: Top N Most Active IP Addresses
+    
+    This shows which source IPs appear most often in the log.
+    'n' is how many IPs to return (default 5).
+    This helps the analyst spot unusual traffic sources.
+    """
+    ip_counts = Counter(log['ip'] for log in parsed_logs if log['ip'])
+    return ip_counts.most_common(n)
