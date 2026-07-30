@@ -1,67 +1,95 @@
 """
 log_parser.py
-This module reads the log file and turns each line into a Python dictionary.
-A dictionary is like a labeled box where we store data with named keys.
+This file reads the log file and turns each line into a Python dictionary
+(a dictionary is just a labeled box that stores data with named keys).
+
+It also does a small "log hygiene" check:
+- counts lines it can't parse (blank or weird-looking lines)
+- removes exact duplicate lines. My dataset actually had a couple of these:
+  same timestamp + user + ip + message twice, which is almost always a
+  logging glitch, not two real events. Counting them twice would
+  throw off my numbers.
 """
 
 def parse_log_line(line):
     """
-    Parse one line from the log file into a dictionary.
-    
-    The log file uses TAB characters to separate fields.
-    Example line:
-    2026-03-17T23:13:01Z	AUTH_SUCCESS	user=mtampling0	ip=10.93.238.87	message=Login successful
-    
-    We split the line by tabs, then turn the key=value pieces into dictionary entries.
+    Turn one log line into a dictionary.
+
+    The log file uses TAB characters between fields. Example line:
+    2026-03-17T23:13:01Z  AUTH_SUCCESS  user=mtampling0  ip=10.93.238.87  message=Login successful
+
+    Returns None for blank or too-short lines so they get skipped
+    instead of crashing the program.
     """
-    # .strip() removes invisible newline characters at the end of each line
+    # .strip() removes the invisible newline character at the end of each line
     line = line.strip()
-    
-    # Skip empty lines so they don't crash the program
+
     if not line:
         return None
-    
-    # Split the line into pieces using the TAB character (\t)
+
+    # split the line wherever there's a TAB
     parts = line.split('\t')
-    
-    # A valid line should have at least 3 parts: timestamp, event, and some data
+
+    # a valid line has at least 3 parts: timestamp, event type, and some data
     if len(parts) < 3:
         return None
-    
-    # Start a dictionary with the first two columns
+
+    # the first two columns are always the timestamp and the event type
     entry = {
-        'timestamp': parts[0],  # The date and time of the event
-        'event': parts[1]       # The type of event, like AUTH_SUCCESS or AUTH_FAIL
+        'timestamp': parts[0],
+        'event': parts[1]
     }
-    
-    # The remaining columns look like "user=mtampling0" or "ip=10.93.238.87"
-    # We split each one at the "=" sign to get the key and the value
+
+    # the rest look like "user=mtampling0" -> split each one at the FIRST "="
     for part in parts[2:]:
         if '=' in part:
-            key, value = part.split('=', 1)  # split at the FIRST = only
+            key, value = part.split('=', 1)
             entry[key] = value
-    
-    # Make sure these keys exist even if a line was missing them
+
+    # make sure these keys exist even if a line was missing them
     for key in ['user', 'ip', 'message']:
         if key not in entry:
             entry[key] = ''
-    
+
     return entry
 
 
 def load_log_file(filename):
     """
-    Open a log file, parse every line, and return a list of dictionaries.
-    
-    'filename' is the path to the log file (for example: 'sample_log.txt').
-    We use 'with open()' so the file automatically closes when we are done.
+    Read the whole file and return 3 things together (a tuple):
+
+        parsed_logs  -> list of dictionaries, one per good line
+        skipped      -> how many lines were blank or malformed
+        duplicates   -> how many exact repeat lines were removed
+
+    main() unpacks them like this:
+        parsed_logs, skipped, duplicates = load_log_file(name)
     """
-    parsed_logs = []  # Create an empty list to hold all parsed entries
-    
+    parsed_logs = []
+    skipped = 0
+    duplicates = 0
+    seen_lines = set()   # a set remembers every raw line I've already seen
+
+    # 'with open()' automatically closes the file when we're done
     with open(filename, 'r') as file:
         for line in file:
+            stripped = line.strip()
+
+            # blank line: count it and move on
+            if not stripped:
+                skipped += 1
+                continue
+
+            # exact same line already processed? skip it
+            if stripped in seen_lines:
+                duplicates += 1
+                continue
+            seen_lines.add(stripped)
+
             parsed = parse_log_line(line)
             if parsed:
                 parsed_logs.append(parsed)
-    
-    return parsed_logs
+            else:
+                skipped += 1   # had text, but not the shape we expect
+
+    return parsed_logs, skipped, duplicates
