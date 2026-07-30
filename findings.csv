@@ -1,109 +1,109 @@
-timestamp,user,ip,event,reason
-N/A (spread across multiple events),root,N/A,AUTH_FAIL,"User ""root"" had 20 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),admin,N/A,AUTH_FAIL,"User ""admin"" had 23 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),tbraxter,N/A,AUTH_FAIL,"User ""tbraxter"" had 14 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),jtoll,N/A,AUTH_FAIL,"User ""jtoll"" had 19 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),jdoe,N/A,AUTH_FAIL,"User ""jdoe"" had 13 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),N/A,192.168.1.15,AUTH_FAIL,"IP ""192.168.1.15"" had 32 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),N/A,10.0.2.87,AUTH_FAIL,"IP ""10.0.2.87"" had 29 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),N/A,192.168.1.17,AUTH_FAIL,"IP ""192.168.1.17"" had 28 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),N/A,51.185.130.223,AUTH_FAIL,"IP ""51.185.130.223"" had 80 failed login attempts (threshold: 3)"
-N/A (spread across multiple events),N/A,192.168.1.15,AUTH_FAIL,"Suspicious IP: ""192.168.1.15"" generated 32 failed logins"
-N/A (spread across multiple events),N/A,10.0.2.87,AUTH_FAIL,"Suspicious IP: ""10.0.2.87"" generated 29 failed logins"
-N/A (spread across multiple events),N/A,192.168.1.17,AUTH_FAIL,"Suspicious IP: ""192.168.1.17"" generated 28 failed logins"
-N/A (spread across multiple events),N/A,51.185.130.223,AUTH_FAIL,"Suspicious IP: ""51.185.130.223"" generated 80 failed logins"
-2026-03-17T12:52:15Z,root,53.248.13.123,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T02:43:11Z,hmulrooney1,194.77.213.18,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-16T01:27:30Z,root,51.91.61.140,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-10T20:03:39Z,hgaineofengland3,84.201.139.199,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-17T14:14:39Z,root,98.241.7.192,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-10T16:28:52Z,cpittam5,79.68.37.38,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T19:12:34Z,bphayre6,195.195.1.138,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-15T19:24:15Z,root,215.111.196.43,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-10T07:20:10Z,mabell8,187.189.169.208,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-11T15:40:46Z,root,27.214.198.117,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-14T20:40:29Z,nphilippea,71.121.191.107,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-12T11:46:54Z,jwadlowb,195.164.21.242,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-17T18:43:22Z,rklaaasenc,238.213.65.94,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-14T18:21:53Z,govelld,17.208.115.147,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-14T17:58:23Z,ealdritte,214.103.94.217,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-13T07:35:26Z,lstainesf,206.28.51.8,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-10T19:18:44Z,bbrunag,127.163.4.42,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-10T14:03:51Z,root,51.167.98.192,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-13T12:51:05Z,radaminii,39.153.38.122,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T14:05:36Z,root,162.211.191.140,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-14T14:24:21Z,hsicklingk,210.158.177.73,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-15T08:00:21Z,eblindtl,155.248.115.177,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-13T23:53:13Z,dmcblainm,136.228.120.55,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-11T10:36:06Z,tlearmondn,38.76.148.24,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-14T06:31:23Z,rvinto,223.245.96.110,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T14:41:56Z,bmargramp,186.133.36.204,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-17T15:03:03Z,bhearnesq,175.101.151.252,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-16T22:17:50Z,jhewinsr,253.158.27.57,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-16T06:32:55Z,kstreatfields,82.11.147.213,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-15T06:06:23Z,lmacfaydent,63.78.204.129,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-11T06:49:51Z,rrobinsonw,63.37.91.225,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-10T22:12:48Z,root,141.242.251.142,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-14T23:45:17Z,root,220.112.12.221,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-11T12:47:13Z,root,93.1.127.33,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-13T07:17:22Z,dbeevis10,99.4.203.185,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-12T13:03:27Z,kwennam11,161.4.56.8,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-10T13:56:16Z,edymoke12,95.48.83.200,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-13T05:10:40Z,root,114.162.125.102,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-11T08:33:21Z,doliveras1n,194.187.18.112,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-16T20:57:46Z,witzhaki1o,222.40.229.183,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-10T14:12:43Z,blerhinan1p,106.71.242.1,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-13T11:00:32Z,nfrankis1q,7.65.86.176,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-17T09:27:13Z,cackroyd1r,191.177.215.207,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-11T18:36:53Z,dmarquese1s,9.125.71.35,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-10T08:53:21Z,rdybald1t,199.85.211.111,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-17T05:24:22Z,rrolfo1u,206.110.221.158,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-15T21:01:40Z,mshaxby1v,239.215.194.39,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-16T03:22:03Z,jcruttenden1w,52.118.195.241,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-17T13:11:52Z,hstuke1x,109.148.70.52,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-11T03:17:35Z,gbarthelet1y,216.97.254.32,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-16T05:15:06Z,rbradman1z,131.240.211.105,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-14T14:28:47Z,gscotti20,122.167.220.85,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T23:54:25Z,mfairfoull21,195.169.120.69,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-13T18:01:19Z,cseawright22,52.83.125.41,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-16T16:10:44Z,sdeathe23,136.52.247.41,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-13T18:32:26Z,adeverson24,37.245.29.204,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-12T21:54:34Z,root,235.240.89.72,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T16:45:10Z,ppurver26,232.89.201.111,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T10:28:12Z,dmatisoff27,48.62.183.191,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-16T17:55:32Z,sbuckbee28,19.87.183.229,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-10T16:06:52Z,root,129.16.101.108,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-13T02:21:00Z,lgremane2a,168.122.146.184,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-15T01:58:46Z,dblenkensop2b,220.10.116.198,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-16T14:05:04Z,ssemens2c,106.73.155.132,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-12T08:25:02Z,bmcniven2d,69.183.67.77,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-16T19:14:42Z,root,94.234.64.142,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-15T08:34:30Z,alebrum2f,214.119.198.228,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-14T14:45:41Z,cdrever2g,236.68.243.33,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T13:35:18Z,root,135.103.53.111,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-14T16:40:57Z,cjumel2i,133.49.133.245,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-10T13:35:18Z,root,135.103.53.111,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-14T16:40:57Z,cjumel2i,133.49.133.245,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T23:31:57Z,dlasslett2j,131.195.12.213,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-11T10:50:17Z,lhouldey2k,42.137.188.195,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-13T15:44:00Z,rshilvock2l,200.236.162.162,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-13T10:13:46Z,fbasten2m,197.205.155.41,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-16T09:58:07Z,lwickman2n,118.49.218.81,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-12T06:43:35Z,jkairns2o,255.140.35.50,PRIV_CHANGE,Privilege escalation event: Granted sudo privileges
-2026-03-14T00:02:24Z,root,125.232.21.10,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-17T09:16:30Z,mkibbee2q,234.32.53.24,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-17T12:35:44Z,root,232.158.179.28,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-13T04:36:55Z,gpeete2s,142.219.254.61,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-14T06:43:56Z,rdenyukin2t,80.123.211.206,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T20:00:26Z,hhevner2u,116.179.99.94,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-15T02:52:49Z,vhillen2v,45.2.44.27,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-11T14:05:45Z,aorto2w,67.207.108.195,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-10T23:31:23Z,ifairbank2x,83.217.213.248,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-12T04:11:06Z,root,131.143.28.72,PRIV_CHANGE,Privilege escalation event: chown command failed
-2026-03-14T01:33:17Z,mknappen2z,173.25.107.246,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T04:42:37Z,pbemwell30,38.139.13.225,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-15T03:21:48Z,root,32.27.135.194,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-13T12:14:12Z,root,192.63.184.248,PRIV_CHANGE,Privilege escalation event: Logged in as root
-2026-03-17T14:43:44Z,dcandey33,49.84.55.19,PRIV_CHANGE,Privilege escalation event: chmod command failed
-2026-03-17T05:17:58Z,root,57.93.189.70,PRIV_CHANGE,Privilege escalation event: User added to administrators group
-2026-03-10T02:44:27Z,evazquez35,10.0.2.87,PRIV_CHANGE,Privilege escalation event: User added to administrators group
+severity,first_seen,last_seen,user,ip,event,mitre,reason
+CRITICAL,2026-03-10T07:01:18Z,2026-03-14T13:12:22Z,jdoe,100.108.103.43,AUTH_SUCCESS,T1078,"POSSIBLE COMPROMISE: account ""jdoe"" had 10 failed logins BEFORE a successful login from 100.108.103.43 [T1078 Valid Accounts]"
+HIGH,2026-03-10T01:48:14Z,2026-03-18T22:04:34Z,N/A,51.185.130.223,AUTH_FAIL,"T1110, T1110.004","Suspicious IP ""51.185.130.223"": 80 failed logins (threshold: 5) + tried 72 different usernames (threshold: 3) [T1110, T1110.004]"
+HIGH,2026-03-10T02:44:27Z,2026-03-10T02:44:27Z,evazquez35,10.0.2.87,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-10T04:32:42Z,2026-03-17T14:50:31Z,N/A,192.168.1.17,AUTH_FAIL,"T1110, T1110.004","Suspicious IP ""192.168.1.17"": 28 failed logins (threshold: 5) + tried 5 different usernames (threshold: 3) [T1110, T1110.004]"
+HIGH,2026-03-10T04:41:18Z,2026-03-17T23:37:25Z,N/A,10.0.2.87,AUTH_FAIL,"T1110, T1110.004","Suspicious IP ""10.0.2.87"": 29 failed logins (threshold: 5) + tried 5 different usernames (threshold: 3) [T1110, T1110.004]"
+HIGH,2026-03-10T07:01:18Z,2026-03-17T21:09:25Z,N/A,192.168.1.15,AUTH_FAIL,"T1110, T1110.004","Suspicious IP ""192.168.1.15"": 32 failed logins (threshold: 5) + tried 5 different usernames (threshold: 3) [T1110, T1110.004]"
+HIGH,2026-03-10T08:53:21Z,2026-03-10T08:53:21Z,rdybald1t,199.85.211.111,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-10T16:28:52Z,2026-03-10T16:28:52Z,cpittam5,79.68.37.38,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-10T19:12:34Z,2026-03-10T19:12:34Z,bphayre6,195.195.1.138,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-10T20:03:39Z,2026-03-10T20:03:39Z,hgaineofengland3,84.201.139.199,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-10T23:31:23Z,2026-03-10T23:31:23Z,ifairbank2x,83.217.213.248,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-11T10:36:06Z,2026-03-11T10:36:06Z,tlearmondn,38.76.148.24,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-11T12:47:13Z,2026-03-11T12:47:13Z,root,93.1.127.33,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-11T15:40:46Z,2026-03-11T15:40:46Z,root,27.214.198.117,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-12T02:43:11Z,2026-03-12T02:43:11Z,hmulrooney1,194.77.213.18,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-12T06:43:35Z,2026-03-12T06:43:35Z,jkairns2o,255.140.35.50,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-12T08:25:02Z,2026-03-12T08:25:02Z,bmcniven2d,69.183.67.77,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-12T10:28:12Z,2026-03-12T10:28:12Z,dmatisoff27,48.62.183.191,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-12T13:03:27Z,2026-03-12T13:03:27Z,kwennam11,161.4.56.8,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-12T14:41:56Z,2026-03-12T14:41:56Z,bmargramp,186.133.36.204,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-12T21:54:34Z,2026-03-12T21:54:34Z,root,235.240.89.72,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-12T23:31:57Z,2026-03-12T23:31:57Z,dlasslett2j,131.195.12.213,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-13T02:21:00Z,2026-03-13T02:21:00Z,lgremane2a,168.122.146.184,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-13T15:44:00Z,2026-03-13T15:44:00Z,rshilvock2l,200.236.162.162,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-13T23:53:13Z,2026-03-13T23:53:13Z,dmcblainm,136.228.120.55,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-14T00:02:24Z,2026-03-14T00:02:24Z,root,125.232.21.10,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-14T01:33:17Z,2026-03-14T01:33:17Z,mknappen2z,173.25.107.246,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-14T06:43:56Z,2026-03-14T06:43:56Z,rdenyukin2t,80.123.211.206,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-14T14:24:21Z,2026-03-14T14:24:21Z,hsicklingk,210.158.177.73,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-14T14:45:41Z,2026-03-14T14:45:41Z,cdrever2g,236.68.243.33,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-14T17:58:23Z,2026-03-14T17:58:23Z,ealdritte,214.103.94.217,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-15T08:00:21Z,2026-03-15T08:00:21Z,eblindtl,155.248.115.177,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-15T21:01:40Z,2026-03-15T21:01:40Z,mshaxby1v,239.215.194.39,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-16T01:27:30Z,2026-03-16T01:27:30Z,root,51.91.61.140,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-16T03:22:03Z,2026-03-16T03:22:03Z,jcruttenden1w,52.118.195.241,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-16T05:15:06Z,2026-03-16T05:15:06Z,rbradman1z,131.240.211.105,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-16T16:10:44Z,2026-03-16T16:10:44Z,sdeathe23,136.52.247.41,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-16T19:14:42Z,2026-03-16T19:14:42Z,root,94.234.64.142,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-17T05:17:58Z,2026-03-17T05:17:58Z,root,57.93.189.70,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-17T09:16:30Z,2026-03-17T09:16:30Z,mkibbee2q,234.32.53.24,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-17T13:11:52Z,2026-03-17T13:11:52Z,hstuke1x,109.148.70.52,PRIV_CHANGE,T1098,Privilege event: User added to administrators group [T1098]
+HIGH,2026-03-17T14:14:39Z,2026-03-17T14:14:39Z,root,98.241.7.192,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+HIGH,2026-03-17T18:43:22Z,2026-03-17T18:43:22Z,rklaaasenc,238.213.65.94,PRIV_CHANGE,T1548.003,Privilege event: Granted sudo privileges [T1548.003]
+MEDIUM,2026-03-10T02:44:27Z,2026-03-10T02:44:27Z,evazquez35,10.0.2.87,PRIV_CHANGE,T1078,Odd-hour activity at 02:00 by user/IP already flagged in this investigation: User added to administrators group [T1078]
+MEDIUM,2026-03-10T04:32:42Z,2026-03-17T23:37:25Z,root,N/A,AUTH_FAIL,T1110,"Brute force: account ""root"" had 20 failed logins (threshold: 5) [T1110 Brute Force]"
+MEDIUM,2026-03-10T04:41:18Z,2026-03-17T21:09:25Z,admin,N/A,AUTH_FAIL,T1110,"Brute force: account ""admin"" had 23 failed logins (threshold: 5) [T1110 Brute Force]"
+MEDIUM,2026-03-10T04:42:37Z,2026-03-10T04:42:37Z,pbemwell30,38.139.13.225,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-10T06:56:56Z,2026-03-16T14:36:29Z,jtoll,N/A,AUTH_FAIL,T1110,"Brute force: account ""jtoll"" had 19 failed logins (threshold: 5) [T1110 Brute Force]"
+MEDIUM,2026-03-10T07:01:18Z,2026-03-16T10:48:33Z,jdoe,N/A,AUTH_FAIL,T1110,"Brute force: account ""jdoe"" had 13 failed logins (threshold: 5) [T1110 Brute Force]"
+MEDIUM,2026-03-10T14:03:51Z,2026-03-10T14:03:51Z,root,51.167.98.192,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-10T15:20:45Z,2026-03-17T14:50:31Z,tbraxter,N/A,AUTH_FAIL,T1110,"Brute force: account ""tbraxter"" had 14 failed logins (threshold: 5) [T1110 Brute Force]"
+MEDIUM,2026-03-10T19:18:44Z,2026-03-10T19:18:44Z,bbrunag,127.163.4.42,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-11T08:33:21Z,2026-03-11T08:33:21Z,doliveras1n,194.187.18.112,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-11T10:50:17Z,2026-03-11T10:50:17Z,lhouldey2k,42.137.188.195,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-12T04:11:06Z,2026-03-12T04:11:06Z,root,131.143.28.72,PRIV_CHANGE,T1078,Odd-hour activity at 04:00 by user/IP already flagged in this investigation: chown command failed [T1078]
+MEDIUM,2026-03-12T23:54:25Z,2026-03-12T23:54:25Z,mfairfoull21,195.169.120.69,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-13T12:14:12Z,2026-03-13T12:14:12Z,root,192.63.184.248,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-14T00:02:24Z,2026-03-14T00:02:24Z,root,125.232.21.10,PRIV_CHANGE,T1078,Odd-hour activity at 00:00 by user/IP already flagged in this investigation: User added to administrators group [T1078]
+MEDIUM,2026-03-14T20:40:29Z,2026-03-14T20:40:29Z,nphilippea,71.121.191.107,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-15T02:52:49Z,2026-03-15T02:52:49Z,vhillen2v,45.2.44.27,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-15T03:21:48Z,2026-03-15T03:21:48Z,root,32.27.135.194,PRIV_CHANGE,T1078,Odd-hour activity at 03:00 by user/IP already flagged in this investigation: chmod command failed [T1078]
+MEDIUM,2026-03-15T06:06:23Z,2026-03-15T06:06:23Z,lmacfaydent,63.78.204.129,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-15T19:24:15Z,2026-03-15T19:24:15Z,root,215.111.196.43,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+MEDIUM,2026-03-16T01:27:30Z,2026-03-16T01:27:30Z,root,51.91.61.140,PRIV_CHANGE,T1078,Odd-hour activity at 01:00 by user/IP already flagged in this investigation: Granted sudo privileges [T1078]
+MEDIUM,2026-03-16T14:05:04Z,2026-03-16T14:05:04Z,ssemens2c,106.73.155.132,PRIV_CHANGE,T1078,Privilege event: Logged in as root [T1078]
+LOW,2026-03-10T07:20:10Z,2026-03-10T07:20:10Z,mabell8,187.189.169.208,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-10T13:35:18Z,2026-03-10T13:35:18Z,root,135.103.53.111,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-10T13:56:16Z,2026-03-10T13:56:16Z,edymoke12,95.48.83.200,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-10T14:12:43Z,2026-03-10T14:12:43Z,blerhinan1p,106.71.242.1,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-10T16:06:52Z,2026-03-10T16:06:52Z,root,129.16.101.108,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-10T16:45:10Z,2026-03-10T16:45:10Z,ppurver26,232.89.201.111,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-10T20:00:26Z,2026-03-10T20:00:26Z,hhevner2u,116.179.99.94,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-10T22:12:48Z,2026-03-10T22:12:48Z,root,141.242.251.142,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-11T03:17:35Z,2026-03-11T03:17:35Z,gbarthelet1y,216.97.254.32,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-11T06:49:51Z,2026-03-11T06:49:51Z,rrobinsonw,63.37.91.225,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-11T14:05:45Z,2026-03-11T14:05:45Z,aorto2w,67.207.108.195,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-11T18:36:53Z,2026-03-11T18:36:53Z,dmarquese1s,9.125.71.35,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-12T04:11:06Z,2026-03-12T04:11:06Z,root,131.143.28.72,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-12T11:46:54Z,2026-03-12T11:46:54Z,jwadlowb,195.164.21.242,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-12T14:05:36Z,2026-03-12T14:05:36Z,root,162.211.191.140,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T04:36:55Z,2026-03-13T04:36:55Z,gpeete2s,142.219.254.61,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T05:10:40Z,2026-03-13T05:10:40Z,root,114.162.125.102,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T07:17:22Z,2026-03-13T07:17:22Z,dbeevis10,99.4.203.185,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-13T07:35:26Z,2026-03-13T07:35:26Z,lstainesf,206.28.51.8,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T10:13:46Z,2026-03-13T10:13:46Z,fbasten2m,197.205.155.41,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T11:00:32Z,2026-03-13T11:00:32Z,nfrankis1q,7.65.86.176,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T12:51:05Z,2026-03-13T12:51:05Z,radaminii,39.153.38.122,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T18:01:19Z,2026-03-13T18:01:19Z,cseawright22,52.83.125.41,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-13T18:32:26Z,2026-03-13T18:32:26Z,adeverson24,37.245.29.204,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-14T06:31:23Z,2026-03-14T06:31:23Z,rvinto,223.245.96.110,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-14T14:28:47Z,2026-03-14T14:28:47Z,gscotti20,122.167.220.85,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-14T16:40:57Z,2026-03-14T16:40:57Z,cjumel2i,133.49.133.245,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-14T18:21:53Z,2026-03-14T18:21:53Z,govelld,17.208.115.147,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-14T23:45:17Z,2026-03-14T23:45:17Z,root,220.112.12.221,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-15T01:58:46Z,2026-03-15T01:58:46Z,dblenkensop2b,220.10.116.198,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-15T03:21:48Z,2026-03-15T03:21:48Z,root,32.27.135.194,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-15T08:34:30Z,2026-03-15T08:34:30Z,alebrum2f,214.119.198.228,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-16T06:32:55Z,2026-03-16T06:32:55Z,kstreatfields,82.11.147.213,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-16T09:58:07Z,2026-03-16T09:58:07Z,lwickman2n,118.49.218.81,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-16T17:55:32Z,2026-03-16T17:55:32Z,sbuckbee28,19.87.183.229,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-16T20:57:46Z,2026-03-16T20:57:46Z,witzhaki1o,222.40.229.183,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-16T22:17:50Z,2026-03-16T22:17:50Z,jhewinsr,253.158.27.57,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-17T05:24:22Z,2026-03-17T05:24:22Z,rrolfo1u,206.110.221.158,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-17T09:27:13Z,2026-03-17T09:27:13Z,cackroyd1r,191.177.215.207,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-17T12:35:44Z,2026-03-17T12:35:44Z,root,232.158.179.28,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-17T12:52:15Z,2026-03-17T12:52:15Z,root,53.248.13.123,PRIV_CHANGE,T1222,Privilege event: chown command failed [T1222]
+LOW,2026-03-17T14:43:44Z,2026-03-17T14:43:44Z,dcandey33,49.84.55.19,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
+LOW,2026-03-17T15:03:03Z,2026-03-17T15:03:03Z,bhearnesq,175.101.151.252,PRIV_CHANGE,T1222,Privilege event: chmod command failed [T1222]
