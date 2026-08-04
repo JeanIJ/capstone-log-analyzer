@@ -87,8 +87,6 @@ AI tools were used while building this project, as the Code:You AI policy allows
 - Generating and iterating on code for the parser, the detection rules, and the CLI
 - Reviewing the detection rules for false positives
 
-Everything in this repo was reviewed, run, and verified by me against the project requirements. The outputs, counts, and error handling were all checked by hand. I take full accountability for the final code and can explain every part of it.
-
 ## What I Learned
 
 **What worked well:** Breaking the code into three files made it way easier to test. When something broke, I knew exactly which file to check.
