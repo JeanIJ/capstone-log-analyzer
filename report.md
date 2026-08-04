@@ -6,7 +6,7 @@ Analyst: Jean
 
 ## 1. Overview
 
-This report documents the findings of a Python-based log analysis tool built for a simulated SOC investigation. The organization experienced suspicious account activity, and leadership asked the security team to review authentication and system logs for signs of malicious behavior. The tool (`log_analyzer.py`) parses an authentication log, applies five detection rules, and produces a severity-sorted alert list with supporting evidence — the same output a Tier 1 SOC analyst would use to start triage.
+This report documents the findings of a Python-based log analysis tool built for a simulated SOC investigation. The organization experienced suspicious account activity, and leadership asked the security team to review authentication and system logs for signs of malicious behavior. The tool (`log_analyzer.py`) parses an authentication log, applies five detection rules, and produces a severity-sorted alert list with supporting evidence.
 
 ## 2. Log Source
 
