@@ -1,5 +1,4 @@
-
-# Authentication Log Analyzer
+Authentication Log Analyzer
 
 **Code:You Cybersecurity Capstone — Part I: Python Automation Track**
 
@@ -46,20 +45,7 @@ The tool reads a log file, counts events, detects repeated failed logins, flags 
    python3 log_analyzer.py sample_log.txt --threshold 3
    ```
 
-
-
-1. Repeated Failed Logins
-   The script counts how many times each username and each IP fails to log in. If the count hits the threshold (default 5), it gets flagged. This catches brute-force attacks.
-2. Suspicious IP Activity
-   The script flags IPs that:
-   Generate too many failed logins (volume attack)
-   Try to log in as many different usernames (credential stuffing)
-3. Privilege Escalation Indicators
-   The script automatically flags all PRIV_CHANGE events. It also scans messages for keywords like sudo, root, admin, chmod, and chown to catch unauthorized permission changes.
-
-
 ## Log Source
-
 
 The dataset is `sample_log.txt`, a synthetic authentication log with:
 
@@ -71,36 +57,33 @@ Each line has a timestamp, event type, username, IP address, and message.
 
 ## Detection Logic
 
-1. Repeated Failed Logins
-   The script counts how many times each username and each IP fails to log in. If the count hits the threshold (default 5), it gets flagged. This catches brute-force attacks.
-2. Suspicious IP Activity
-   The script flags IPs that:
-   Generate too many failed logins (volume attack)
-   Try to log in as many different usernames (credential stuffing)
-3. Privilege Escalation Indicators
-   The script automatically flags all PRIV_CHANGE events. It also scans messages for keywords like sudo, root, admin, chmod, and chown to catch unauthorized permission changes.
+The tool runs five rules. Each flag is tagged with a MITRE ATT&CK technique ID, the same IDs real SOC alerts use:
 
+1. **Repeated failed logins (T1110, MEDIUM):** counts failed logins per username. One account hitting the threshold (default 5) gets flagged as possible brute force.
+2. **Suspicious IP activity (T1110 / T1110.004, MEDIUM–HIGH):** one flag per IP combining two checks — lots of failures from the same address (volume attack), and one address trying many different usernames (credential stuffing).
+3. **Privilege events, tiered (LOW to HIGH):** every PRIV_CHANGE event gets flagged, with severity based on what happened — sudo grants and admin-group adds are HIGH, root logins MEDIUM, failed chmod/chown attempts LOW. A keyword scan also catches privilege hints in other event types.
+4. **Brute force followed by a success (T1078, CRITICAL):** if an account racks up 5+ failed logins and then a login succeeds, the attacker may have guessed the password. This is the only CRITICAL rule, and it's what caught jdoe.
+5. **Odd-hour activity (T1078, MEDIUM):** logins or privilege changes between 00:00 and 05:00, but only for users/IPs already flagged by another rule, so normal night-shift activity doesn't set off alarms.
+
+Every flag records the first and last timestamp of the evidence, and all flags print sorted by severity so the worst alerts are at the top.
 
 ## Files in This Project
 
-
-
-| File                | What It Does                                                                 |
-| ------------------- | ---------------------------------------------------------------------------- |
-| `log_analyzer.py` | The main script you run from the terminal                                    |
-| `log_parser.py`   | Reads the log file and turns lines into dictionaries                         |
-| `detectors.py`    | The three detection rules (failed logins, suspicious IPs, privilege changes) |
-| `sample_log.txt`  | The test dataset                                                             |
-| `README.md`       | This file                                                                    |
-| `report.md`       | My analyst findings and recommendations                                      |
-
+| File                | What It Does                                                                                                    |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `log_analyzer.py` | The main script you run from the terminal                                                                       |
+| `log_parser.py`   | Reads the log file and turns lines into dictionaries                                                            |
+| `detectors.py`    | The five detection rules (failed logins, suspicious IPs, privilege events, brute-force-then-success, odd hours) |
+| `sample_log.txt`  | The test dataset                                                                                                |
+| `findings.csv`    | The 108 flagged events exported by the tool                                                                     |
+| `screenshots/`    | Annotated screenshots of the tool in action                                                                     |
+| `README.md`       | This file                                                                                                       |
+| `report.md`       | My analyst findings and recommendations                                                                         |
 
 ## What I Learned
-
-
 
 **What worked well:** Breaking the code into three files made it way easier to test. When something broke, I knew exactly which file to check.
 
 **What was challenging:** Learning how `Counter` and `set` work in Python took some time. I also had to figure out why the parser crashed on empty lines — turns out `.strip()` was the fix.
 
-**What I would improve:** I would add a rule for unusual login hours (like logins at 3 AM) and maybe colorize the terminal output so critical flags stand out in red.
+**What I would improve:** Support for real Linux auth.log files, geolocation on IP addresses to automatically label internal vs. external sources, and a time-window check so only rapid bursts of failures count as brute force (right now 5 failures spread over a whole week would still trigger).
