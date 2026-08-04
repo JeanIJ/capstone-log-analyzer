@@ -77,9 +77,9 @@ def detect_suspicious_ips(parsed_logs, fail_threshold=5, username_threshold=3):
     """
     RULE B — suspicious IP addresses (ONE flag per IP, reasons combined).
 
-    An earlier version of this rule flagged the same IP twice with almost
-    the same wording, so now each IP gets a single flag and I just add
-    every reason that applies:
+    Each IP gets a single flag, with every reason that applies combined
+    into it. That keeps the alert list free of near-duplicate flags all
+    pointing at the same address:
 
       1. VOLUME — lots of failed logins from the same IP
          -> T1110 (Brute Force), severity MEDIUM
@@ -138,8 +138,8 @@ def detect_privilege_events(parsed_logs):
     """
     RULE C — privilege escalation indicators, tiered by severity.
 
-    At first I flagged ALL privilege events the same way, but that made a
-    wall of ~95 identical alerts and the dangerous ones got buried. So now
+    Flagging every privilege event at the same severity would bury the
+    dangerous ones in a wall of nearly a hundred identical alerts, so
     each event gets a severity based on what actually happened:
 
       HIGH   : 'Granted sudo privileges'  -> T1548.003 (abusing sudo)
