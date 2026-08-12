@@ -4,6 +4,8 @@ Authentication Log Analyzer
 
 By Jean
 
+Part II of this capstone (SOC Detection Engineering): https://github.com/JeanIJ/capstone-soc-detection
+
 ---
 
 ## Overview
